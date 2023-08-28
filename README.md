@@ -1,6 +1,4 @@
-const fs = require('fs');
 
-const content = `
 # Hedera Hashgraph Smart Contract Deployment
 
 Deploy and manage smart contracts on the Hedera Hashgraph network with this project. Create fungible tokens, mint, associate, and transfer them with ease.
@@ -66,12 +64,3 @@ node [your-script-name].js
 - Ensure your Hedera accounts have enough HBARs for transaction fees.
 - **Security**: Always keep private keys confidential!
 
-## 📜 License
-
-MIT License. Use, modify, and distribute as you see fit.
-`;
-
-fs.writeFileSync('README.md', content, 'utf8', (err) => {
-    if (err) throw err;
-    console.log('README.md has been generated!');
-});
